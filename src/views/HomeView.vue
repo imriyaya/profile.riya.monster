@@ -1,15 +1,16 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import Button from "../components/Button.vue"
 </script>
 
 <template>
   <main class="background">
     <div class="wrapper">
-      <img src="/icon.jpg" alt="icon" class="icon">
-      <h1>Welcome to <span>riya</span>'s link site!</h1>
+      <img alt="icon" class="icon" src="/icon.jpg">
+      <h1>Welcome to <span class="riya">riya</span>'s link site!</h1>
       <h2>See what I am up to~</h2>
       <Button path="https://instagram.com/imriyaya">Instagram</Button>
       <Button path="https://twitter.com/imriyaya">Twitter</Button>
+      <Button path="https://open.spotify.com/user/31cizhgicrxf6lkvobu5achfeovi?si=363980de6e3d4ca7">Spotify</Button>
       <Button path="https://www.youtube.com/@t.z">Youtube</Button>
       <Button path="https://discord.com/invite/NJkb2TdR2x">Discord</Button>
       <Button path="https://github.com/imriyaya">GitHub</Button>
@@ -28,14 +29,6 @@ import Button from "../components/Button.vue"
   color: white;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
   user-select: none;
-}
-
-.background {
-  min-height: 100vh;
-  width: 100vw;
-  background-image: url("/wallpaper.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .wrapper {
@@ -60,5 +53,17 @@ import Button from "../components/Button.vue"
   .wrapper {
     width: 90%;
   }
+}
+
+.riya {
+  color: #ff9de5;
+}
+</style>
+
+<style>
+body {
+  background-image: url("/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
